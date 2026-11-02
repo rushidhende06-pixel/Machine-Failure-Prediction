@@ -66,6 +66,7 @@ if st.button("Predict Machine Failure"):
 
     transformed_data = pipeline.transform(input_data)
     prediction = model.predict(transformed_data)[0]
+    
 
     if prediction == 1:
         st.error("⚠️ Machine Failure Predicted")
